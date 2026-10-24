@@ -2,11 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Musica del Alma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 World Music Explorer | Discover Global Sounds</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Floating Music Notes Background -->
+    <div class="music-notes-bg" id="musicNotes"></div>
+
+    <!-- Header -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">World Music</span>
+                <span class="hero-subtitle">Explorer</span>
+            </h1>
+            <p class="hero-description">
+                🎧 Discover the rhythm of every continent. From K-pop to Flamenco, 
+                from Afrobeat to Tango — your global soundtrack awaits!
+            </p>
+            <a href="#regions" class="cta-button">Start Exploring 🚀</a>
+        </div>
+        <div class="hero-visual">
+            <div class="globe">🌍</div>
+        </div>
+    </header>
+
+    <!-- Filter Buttons -->
+    <section class="filters">
+        <h2 class="section-title">Filter by Region</h2>
+        <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-filter="all">🌐 All</button>
+            <button class="filter-btn" data-filter="americas">🌎 Americas</button>
+            <button class="filter-btn" data-filter="europe">🌍 Europe</button>
+            <button class="filter-btn" data-filter="africa">🌍 Africa</button>
+            <button class="filter-btn" data-filter="asia">🌏 Asia</button>
+            <button class="filter-btn" data-filter="oceania">🏝️ Oceania</button>
+        </div>
+    </section>
+
+    <!-- Music Cards Grid -->
+    <section class="regions" id="regions">
+        <div class="cards-grid" id="cardsGrid">
+            <!-- Cards injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Fun Fact Section -->
+    <section class="fun-fact">
+        <div class="fact-container">
+            <h3>💡 Did You Know?</h3>
+            <p id="funFact">Loading a musical fact...</p>
+            <button class="fact-btn" id="newFactBtn">Get Another Fact 🎲</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with 🎵 and passion by a music lover</p>
+        <p class="footer-note">All links redirect to Spotify. Support the artists! 🎤</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
